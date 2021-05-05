@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: e77bfef894cc51d418bc6e81bb787d2c
+guid: 5658dcc151a271e48809c4df32216e69
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7478646664463691743
-    second: 7 - Orchid_Owl_Flying (32 x 32)_0
+      213: -2222671339359911295
+    second: Pink_Monster_Idle_4_0
   - first:
-      213: 4285406285531576022
-    second: 7 - Orchid_Owl_Flying (32 x 32)_1
+      213: 2425431467501175809
+    second: Pink_Monster_Idle_4_1
   - first:
-      213: 5080461245967380067
-    second: 7 - Orchid_Owl_Flying (32 x 32)_2
+      213: 6869693272701700846
+    second: Pink_Monster_Idle_4_2
+  - first:
+      213: 2040477417508173474
+    second: Pink_Monster_Idle_4_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -54,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 7 - Orchid_Owl_Flying (32 x 32)_0
+      name: Pink_Monster_Idle_4_0
       rect:
         serializedVersion: 2
         x: 0
@@ -110,14 +113,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1205bf37b72863890800000000000000
-      internalID: -7478646664463691743
+      spriteID: 182c20d613c7721e0800000000000000
+      internalID: -2222671339359911295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7 - Orchid_Owl_Flying (32 x 32)_1
+      name: Pink_Monster_Idle_4_1
       rect:
         serializedVersion: 2
         x: 32
@@ -131,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d6f557cf42d87b30800000000000000
-      internalID: 4285406285531576022
+      spriteID: 1044677b11dd8a120800000000000000
+      internalID: 2425431467501175809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7 - Orchid_Owl_Flying (32 x 32)_2
+      name: Pink_Monster_Idle_4_2
       rect:
         serializedVersion: 2
         x: 64
@@ -152,8 +155,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e2605f59c618640800000000000000
-      internalID: 5080461245967380067
+      spriteID: eea864362ad065f50800000000000000
+      internalID: 6869693272701700846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Idle_4_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6f7ca766b315c10800000000000000
+      internalID: 2040477417508173474
       vertices: []
       indices: 
       edges: []

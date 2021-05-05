@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: e77bfef894cc51d418bc6e81bb787d2c
+guid: 8c39cbe23cb6eaf45af29a90f27a60f8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7478646664463691743
-    second: 7 - Orchid_Owl_Flying (32 x 32)_0
+      213: 4988797014474009180
+    second: Pink_Monster_Walk_6_0
   - first:
-      213: 4285406285531576022
-    second: 7 - Orchid_Owl_Flying (32 x 32)_1
+      213: -4114854856959736440
+    second: Pink_Monster_Walk_6_1
   - first:
-      213: 5080461245967380067
-    second: 7 - Orchid_Owl_Flying (32 x 32)_2
+      213: 8852617987441630179
+    second: Pink_Monster_Walk_6_2
+  - first:
+      213: 2928625931318688351
+    second: Pink_Monster_Walk_6_3
+  - first:
+      213: 7152728969252384440
+    second: Pink_Monster_Walk_6_4
+  - first:
+      213: 1435900599014651832
+    second: Pink_Monster_Walk_6_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -54,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 7 - Orchid_Owl_Flying (32 x 32)_0
+      name: Pink_Monster_Walk_6_0
       rect:
         serializedVersion: 2
         x: 0
@@ -110,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1205bf37b72863890800000000000000
-      internalID: -7478646664463691743
+      spriteID: c5aa040f374cb3540800000000000000
+      internalID: 4988797014474009180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7 - Orchid_Owl_Flying (32 x 32)_1
+      name: Pink_Monster_Walk_6_1
       rect:
         serializedVersion: 2
         x: 32
@@ -131,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d6f557cf42d87b30800000000000000
-      internalID: 4285406285531576022
+      spriteID: 885cf9c1f4915e6c0800000000000000
+      internalID: -4114854856959736440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7 - Orchid_Owl_Flying (32 x 32)_2
+      name: Pink_Monster_Walk_6_2
       rect:
         serializedVersion: 2
         x: 64
@@ -152,8 +161,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e2605f59c618640800000000000000
-      internalID: 5080461245967380067
+      spriteID: 3eb11b90821dada70800000000000000
+      internalID: 8852617987441630179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Walk_6_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a7f3c94c194a820800000000000000
+      internalID: 2928625931318688351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Walk_6_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be2feac919934360800000000000000
+      internalID: 7152728969252384440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Monster_Walk_6_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7f901bcf75de310800000000000000
+      internalID: 1435900599014651832
       vertices: []
       indices: 
       edges: []

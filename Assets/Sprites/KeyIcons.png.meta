@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: e77bfef894cc51d418bc6e81bb787d2c
+guid: e018c0176d740624a88dcbfc9b8addc1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7478646664463691743
-    second: 7 - Orchid_Owl_Flying (32 x 32)_0
+      213: -3495547579716694505
+    second: KeyIcons_0
   - first:
-      213: 4285406285531576022
-    second: 7 - Orchid_Owl_Flying (32 x 32)_1
+      213: 4841405974987780406
+    second: KeyIcons_1
   - first:
-      213: 5080461245967380067
-    second: 7 - Orchid_Owl_Flying (32 x 32)_2
+      213: -1611936281182024222
+    second: KeyIcons_2
+  - first:
+      213: -5677179299027639335
+    second: KeyIcons_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 7 - Orchid_Owl_Flying (32 x 32)_0
+      name: KeyIcons_0
       rect:
         serializedVersion: 2
         x: 0
@@ -110,14 +113,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1205bf37b72863890800000000000000
-      internalID: -7478646664463691743
+      spriteID: 71e82871ff15d7fc0800000000000000
+      internalID: -3495547579716694505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7 - Orchid_Owl_Flying (32 x 32)_1
+      name: KeyIcons_1
       rect:
         serializedVersion: 2
         x: 32
@@ -131,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d6f557cf42d87b30800000000000000
-      internalID: 4285406285531576022
+      spriteID: 631b9985511203340800000000000000
+      internalID: 4841405974987780406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7 - Orchid_Owl_Flying (32 x 32)_2
+      name: KeyIcons_2
       rect:
         serializedVersion: 2
         x: 64
@@ -152,8 +155,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e2605f59c618640800000000000000
-      internalID: 5080461245967380067
+      spriteID: 2edc49f1e7041a9e0800000000000000
+      internalID: -1611936281182024222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KeyIcons_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3a14ba18b9631b0800000000000000
+      internalID: -5677179299027639335
       vertices: []
       indices: 
       edges: []
