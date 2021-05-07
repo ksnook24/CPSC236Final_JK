@@ -1778,8 +1778,10 @@ MonoBehaviour:
   controller: {fileID: 1469873544}
   animator: {fileID: 1469873545}
   hasKey: 0
-  jumpVelocity: 1
   runSpeed: 25
+  jumpVelocity: 6
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
 --- !u!50 &1469873541
 Rigidbody2D:
   serializedVersion: 4
