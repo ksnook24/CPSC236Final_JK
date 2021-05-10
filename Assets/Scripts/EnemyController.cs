@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloatingEnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     public List<WaypointScript> waypoints = new List<WaypointScript>();
     public float speed = 1.0f;
@@ -11,8 +11,8 @@ public class FloatingEnemyController : MonoBehaviour
     public Transform respawnPoint;
 
     private Vector3 destination;
-    private bool forwards;
-    
+    private bool forwards = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +64,6 @@ public class FloatingEnemyController : MonoBehaviour
         if (collision.gameObject.layer == 9)
         {
             collision.gameObject.transform.position = respawnPoint.position;
-        }    
+        }
     }
 }

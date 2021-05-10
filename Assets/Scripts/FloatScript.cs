@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloatingMovement : MonoBehaviour
+public class FloatScript : MonoBehaviour
 {
     private float floatingTimer = 0f;
     public float floatingMax = 1f;
