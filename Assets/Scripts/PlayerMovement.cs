@@ -7,7 +7,8 @@ public class PlayerMovement : MonoBehaviour
     //general
     public CharacterController2D controller;
     public Animator animator;
-    public bool hasKey = false;
+    public bool hasFirstKey = false;
+    public bool hasSecondKey = false;
 
     //run
     public float runSpeed = 25f;
@@ -31,9 +32,6 @@ public class PlayerMovement : MonoBehaviour
 
     //health
     public static float healthAmount;
-
-    //bullet
-    public GameObject bullet;
 
     void Awake()
     {
@@ -70,10 +68,7 @@ public class PlayerMovement : MonoBehaviour
         if (healthAmount <= 0.1)
         {
             Debug.Log("You've Died!"); // later replace this with restart button 
-        }
-
-        //Bullet Shooting
-        Shoot();    
+        }   
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -93,13 +88,5 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
-    }
-
-    void Shoot()
-    {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            GameObject.Instantiate(bullet, transform);
-        }
     }
 }

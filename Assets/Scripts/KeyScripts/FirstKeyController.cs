@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class KeyController : MonoBehaviour
+public class FirstKeyController : MonoBehaviour
 {
     private Text keyText;
 
@@ -17,7 +17,7 @@ public class KeyController : MonoBehaviour
     {
         if (collision.gameObject.layer == 9)
         {
-            collision.gameObject.GetComponent<PlayerMovement>().hasKey = true;
+            collision.gameObject.GetComponent<PlayerMovement>().hasFirstKey = true;
             Destroy(this.gameObject);
             UpdateScore();
         }

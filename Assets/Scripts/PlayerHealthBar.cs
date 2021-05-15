@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthBarScript : MonoBehaviour
+public class PlayerHealthBar : MonoBehaviour
 {
     public Vector3 localScale;
 

@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class PlayerBulletController : MonoBehaviour
 {
-    public float speed;
+    public float speed = 20f;
+    public int damage = 1;
     private Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(speed, 0);
+        rb.velocity = transform.right * speed;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (Camera.main.WorldToViewportPoint(this.transform.position).x > 1)
-            Destroy(this.gameObject);
+        BossMovement enemy = hitInfo.GetComponent<BossMovement>();
+        if (enemy != null)
+        {
+            enemy.TakeDamange(damage);
+            Destroy(gameObject);
+        }
     }
 }
