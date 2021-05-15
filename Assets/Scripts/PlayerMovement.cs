@@ -29,9 +29,20 @@ public class PlayerMovement : MonoBehaviour
     bool jumpFlag = false;
     bool jump = false;
 
+    //health
+    public static float healthAmount;
+
+    //bullet
+    public GameObject bullet;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    void Start()
+    {
+        healthAmount = 0.5f;
     }
     private void Update()
     {
@@ -54,6 +65,15 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
+
+        //Health
+        if (healthAmount <= 0.1)
+        {
+            Debug.Log("You've Died!"); // later replace this with restart button 
+        }
+
+        //Bullet Shooting
+        Shoot();    
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -63,10 +83,23 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
             jumpCount = 0;
         }
+
+        if (collision.gameObject.tag == "BossBullet" || collision.gameObject.tag == "Spike")
+        {
+            healthAmount -= 0.1f;
+        }
     }
 
     private void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+    }
+
+    void Shoot()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject.Instantiate(bullet, transform);
+        }
     }
 }
