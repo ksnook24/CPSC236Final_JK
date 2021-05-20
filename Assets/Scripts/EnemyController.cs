@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     public int destinationWaypoint = 1;
     public Transform player;
     public Transform respawnPoint;
+    public GameObject Panel;
 
     private Vector3 destination;
     private bool forwards = true;
@@ -59,11 +60,18 @@ public class EnemyController : MonoBehaviour
         this.destination = this.waypoints[destinationWaypoint].transform.position;
     }
 
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 9)
         {
             collision.gameObject.transform.position = respawnPoint.position;
+
+            if (Panel != null)
+            {
+                bool isActive = Panel.activeSelf;
+                Panel.SetActive(!isActive);
+            }
         }
     }
 }

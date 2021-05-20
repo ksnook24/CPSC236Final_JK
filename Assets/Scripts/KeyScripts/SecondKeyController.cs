@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SecondKeyController : MonoBehaviour
 {
     private Text keyText;
+    public GameObject Panel;
 
     // Start is called before the first frame update
     void Start()
@@ -27,5 +28,22 @@ public class SecondKeyController : MonoBehaviour
     {
         keyText.GetComponent<KeyScoreManager>().score += 1;
         keyText.GetComponent<KeyScoreManager>().UpdateScore();
+        NotificationOpener();
+    }
+
+    public void NotificationOpener()
+    {
+        if (keyText.GetComponent<KeyScoreManager>().score == 2)
+        {
+            if (Panel != null)
+            {
+                bool isActive = Panel.activeSelf;
+                Panel.SetActive(!isActive);
+            }
+        }
+        else
+        {
+
+        }
     }
 }
