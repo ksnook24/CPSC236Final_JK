@@ -9,14 +9,21 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public bool hasFirstKey = false;
     public bool hasSecondKey = false;
+    
+    //general jump potion
+    public bool hasJumpPotion = false;
+    public int potionModAmount = 0;
+   
+    private float potionTimeMax = 10f;
+    private float potionTimeCur = 0f;
+
+    public float jumpVelocity = 1;
+
 
     //run
     public float runSpeed = 25f;
     float horizontalMove = 0f;
 
-    // jump 
-    [Range(1, 10)]
-    public float jumpVelocity = 1;
 
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
@@ -29,9 +36,11 @@ public class PlayerMovement : MonoBehaviour
     //jump.1
     bool jumpFlag = false;
     bool jump = false;
+    
 
     //health
     public static float healthAmount;
+    public GameObject Panel;
 
     void Awake()
     {
@@ -67,7 +76,13 @@ public class PlayerMovement : MonoBehaviour
         //Health
         if (healthAmount <= 0.1)
         {
-            Debug.Log("You've Died!"); // later replace this with restart button 
+            Debug.Log("You've Died!");
+            if (Panel != null)                      // later replace this with restart button 
+            {
+                bool isActive = Panel.activeSelf;
+                Panel.SetActive(!isActive);
+            }
+
         }   
     }
 
@@ -83,6 +98,9 @@ public class PlayerMovement : MonoBehaviour
         {
             healthAmount -= 0.1f;
         }
+
+        if (collision.gameObject.tag == "Potion")
+            jumpVelocity = 10;
     }
 
     private void FixedUpdate()
